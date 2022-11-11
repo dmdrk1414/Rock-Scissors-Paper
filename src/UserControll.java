@@ -54,4 +54,13 @@ public class UserControll {
             firstUser.addNumWin();
         }
     }
+
+    public boolean isEndGame() {
+        for (User user : userList) {
+            if (user.isEndGame()) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
