@@ -7,7 +7,7 @@ public class Hand {
     String hand;
 
     public Hand() {
-        hand = "";
+        setHandRandom();
     }
 
     public void setHandRandom() {
@@ -27,6 +27,10 @@ public class Hand {
 
     public int getRandNum() {
         return new Random().nextInt(3);
+    }
+
+    public String getHand() {
+        return hand;
     }
 
     public static void main(String[] args) {
