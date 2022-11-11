@@ -10,6 +10,13 @@ public class User {
         hand.setHandRandom();
     }
 
+    public boolean isRightHand(String hand) {
+        if (hand.isRightHand(hand)) {
+            return true;
+        }
+        return true;
+    }
+
     @Override
     public String toString() {
         return name;
