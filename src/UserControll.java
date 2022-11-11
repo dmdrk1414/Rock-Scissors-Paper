@@ -63,4 +63,10 @@ public class UserControll {
         }
         return false;
     }
+
+    public void resetHandOfUser() {
+        for (User user : this.userList) {
+            user.resetHandOfUser();
+        }
+    }
 }
