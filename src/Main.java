@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ProgressGame progressGame = new ProgressGame();
+        progressGame.run();
     }
 }
