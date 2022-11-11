@@ -5,6 +5,7 @@ public class User {
 
     public User(String name) {
         this.name = name;
+        hand = new Hand();
         numWin = 0;
     }
 
@@ -18,6 +19,10 @@ public class User {
 
     public boolean isEndGame() {
         return (this.numWin == 5);
+    }
+
+    public String getHand() {
+        return hand.getHand();
     }
 
     public boolean isRightHand(int hand) {
