@@ -31,6 +31,7 @@ public class UserControll {
         User secondUser = this.userList.get(1);
         int firstUserHand = firstUser.hand.hand;
         int secondUserHand = secondUser.hand.hand;
+
         isSameHand(firstUserHand, secondUserHand);
         game(firstUser, firstUserHand, secondUserHand);
         game(secondUser, secondUserHand, firstUserHand);
@@ -44,15 +45,19 @@ public class UserControll {
 
     private static void game(User firstUser, int firstUserHand, int secondUserHand) {
         if (firstUserHand == rock && secondUserHand == scissor) {
-            System.out.println(firstUser + "가 이겼습니다.");
+            printWinnerUser(firstUser);
             firstUser.addNumWin();
         } else if (firstUserHand == scissor && secondUserHand == paper) {
-            System.out.println(firstUser + "가 이겼습니다.");
+            printWinnerUser(firstUser);
             firstUser.addNumWin();
         } else if (firstUserHand == paper && secondUserHand == rock) {
-            System.out.println(firstUser + "가 이겼습니다.");
+            printWinnerUser(firstUser);
             firstUser.addNumWin();
         }
+    }
+
+    private static void printWinnerUser(User firstUser) {
+        System.out.println(firstUser + "가 이겼습니다.");
     }
 
     public boolean isEndGame() {
@@ -65,9 +70,7 @@ public class UserControll {
     }
 
     public void resetHandOfUser() {
-        for (User user : this.userList) {
-            user.resetHandOfUser();
-        }
+        userList.forEach(User::resetHandOfUser);
     }
 
     public void showResoltGameScore() {

@@ -25,7 +25,7 @@ public class Hand {
         }
     }
 
-    public int getRandNum() {
+    private int getRandNum() {
         return new Random().nextInt(3);
     }
 

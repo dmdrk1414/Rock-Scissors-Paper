@@ -3,6 +3,8 @@ public class User {
     Hand hand;
     int numWin;
 
+    final static int NUM_END_GAME = 5;
+
     public User(String name) {
         this.name = name;
         hand = new Hand();
@@ -18,7 +20,7 @@ public class User {
     }
 
     public boolean isEndGame() {
-        return (this.numWin == 5);
+        return (this.numWin == NUM_END_GAME);
     }
 
     public String getHand() {
