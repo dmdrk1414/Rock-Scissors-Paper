@@ -27,6 +27,7 @@ UserControll Class
 - [x] 유저의 손가락을 보여준다.
 - [x] 누가 이겼는지 알려준다.
 - [x] 비겼다는 것을 알려준다.
+- [ ] 손가락을 리셋해준다.
 
 Progress Class 게임 진행
 
