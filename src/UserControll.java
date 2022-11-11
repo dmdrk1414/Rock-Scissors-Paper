@@ -23,5 +23,9 @@ public class UserControll {
         }
     }
 
-
+    public void showHandUser() {
+        for (User user : this.userList) {
+            System.out.println(user.getName() + "의 손가락: " + user);
+        }
+    }
 }
