@@ -16,6 +16,10 @@ public class User {
         numWin = numWin + 1;
     }
 
+    public boolean isEndGame() {
+        return (this.numWin == 5);
+    }
+
     public boolean isRightHand(int hand) {
         return this.hand.isRightHand(hand);
     }
