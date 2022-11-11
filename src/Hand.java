@@ -29,6 +29,10 @@ public class Hand {
         return new Random().nextInt(3);
     }
 
+    public boolean isRightHand(String hand) {
+        return this.hand.equals(hand);
+    }
+
     public String getHand() {
         return hand;
     }

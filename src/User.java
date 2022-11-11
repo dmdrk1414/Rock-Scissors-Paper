@@ -11,10 +11,7 @@ public class User {
     }
 
     public boolean isRightHand(String hand) {
-        if (hand.isRightHand(hand)) {
-            return true;
-        }
-        return true;
+        return this.hand.isRightHand(hand);
     }
 
     @Override
