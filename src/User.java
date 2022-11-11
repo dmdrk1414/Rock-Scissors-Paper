@@ -29,6 +29,10 @@ public class User {
         return this.hand.isRightHand(hand);
     }
 
+    public int getNumWin() {
+        return numWin;
+    }
+
     public String getName() {
         return name;
     }
