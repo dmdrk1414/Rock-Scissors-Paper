@@ -54,12 +54,4 @@ public class UserControll {
             firstUser.addNumWin();
         }
     }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        UserControll userControll = new UserControll();
-        userControll.creatUser(sc);
-        userControll.showHandUser();
-        userControll.whoWin();
-    }
 }
