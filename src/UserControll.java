@@ -69,4 +69,11 @@ public class UserControll {
             user.resetHandOfUser();
         }
     }
+
+    public void showResoltGameScore() {
+        for (User user : this.userList) {
+            System.out.print("이름:" + user.getName() + " 이긴수:" + user.getNumWin() + " ");
+        }
+
+    }
 }
