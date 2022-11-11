@@ -25,10 +25,6 @@ public class User {
         return hand.getHand();
     }
 
-    public boolean isRightHand(int hand) {
-        return this.hand.isRightHand(hand);
-    }
-
     public int getNumWin() {
         return numWin;
     }
@@ -37,7 +33,6 @@ public class User {
         return name;
     }
 
-    @Override
     public String toString() {
         return name;
     }
