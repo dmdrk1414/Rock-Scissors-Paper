@@ -3,20 +3,14 @@ import java.util.Scanner;
 
 public class UserControll {
     ArrayList<User> userList;
-    int numUser;
 
     public UserControll() {
         this.userList = new ArrayList<>();
-        numUser = 0;
     }
 
-    public void inputNumOfUser(Scanner sc) {
-        System.out.print("유저의 숫자는 몇명이야?");
-        numUser = sc.nextInt();
-    }
 
     public void creatUser(User user, Scanner sc) {
-        for (int i = 0; i < numUser; i++) {
+        for (int i = 0; i < 2; i++) {
             System.out.print((i + 1) + "번의 유저의 이름: ");
             String name = sc.next();
             userList.add(new User(name));
@@ -26,6 +20,19 @@ public class UserControll {
     public void showHandUser() {
         for (User user : this.userList) {
             System.out.println(user.getName() + "의 손가락: " + user);
+        }
+    }
+
+    public void whoWin() {
+        User firstUser = this.userList.get(0);
+        User secondUser = this.userList.get(1);
+        int firstUserHand = firstUser.hand.hand;
+        int secondUserHand = firstUser.hand.hand;
+
+        if (firstUserHand == secondUserHand) {
+            System.out.println("비겼습니다. ");
+        } else {
+
         }
     }
 }

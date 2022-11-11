@@ -10,7 +10,7 @@ public class User {
         hand.setHandRandom();
     }
 
-    public boolean isRightHand(String hand) {
+    public boolean isRightHand(int hand) {
         return this.hand.isRightHand(hand);
     }
 

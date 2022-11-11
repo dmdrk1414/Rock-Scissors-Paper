@@ -4,7 +4,7 @@ public class Hand {
     final static int rock = 0;
     final static int scissor = 1;
     final static int paper = 2;
-    String hand;
+    int hand;
 
     public Hand() {
         setHandRandom();
@@ -14,13 +14,13 @@ public class Hand {
         int numRandom = getRandNum();
         switch (numRandom) {
             case rock:
-                this.hand = "rock";
+                this.hand = rock;
                 break;
             case scissor:
-                this.hand = "scissor";
+                this.hand = scissor;
                 break;
             case paper:
-                this.hand = "paper";
+                this.hand = paper;
                 break;
         }
     }
@@ -29,11 +29,11 @@ public class Hand {
         return new Random().nextInt(3);
     }
 
-    public boolean isRightHand(String hand) {
-        return this.hand.equals(hand);
+    public boolean isRightHand(int hand) {
+        return this.hand == hand;
     }
 
-    public String getHand() {
+    public int getHand() {
         return hand;
     }
 
