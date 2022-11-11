@@ -14,6 +14,9 @@ public class User {
         return this.hand.isRightHand(hand);
     }
 
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String toString() {
