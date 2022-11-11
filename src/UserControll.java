@@ -31,11 +31,15 @@ public class UserControll {
         User secondUser = this.userList.get(1);
         int firstUserHand = firstUser.hand.hand;
         int secondUserHand = secondUser.hand.hand;
+        isSameHand(firstUserHand, secondUserHand);
+        game(firstUser, firstUserHand, secondUserHand);
+        game(secondUser, secondUserHand, firstUserHand);
+    }
+
+    private static void isSameHand(int firstUserHand, int secondUserHand) {
         if (firstUserHand == secondUserHand) {
             System.out.println("비겼습니다. ");
         }
-        game(firstUser, firstUserHand, secondUserHand);
-        game(secondUser, secondUserHand, firstUserHand);
     }
 
     private static void game(User firstUser, int firstUserHand, int secondUserHand) {
