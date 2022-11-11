@@ -33,8 +33,14 @@ public class Hand {
         return this.hand == hand;
     }
 
-    public int getHand() {
-        return hand;
+    public String getHand() {
+        if (this.hand == rock) {
+            return "rock";
+        } else if (this.hand == scissor) {
+            return "scissor";
+        } else {
+            return "paper";
+        }
     }
 
     public static void main(String[] args) {
