@@ -12,7 +12,7 @@ User Class 유저
 - [x] toString 이름을 반환
 - [x] Hand Class을 포함한다.
 - [x] 손가락을 리셋하는 함수
-- [ ] 손가락이 맞는 지 확인하는 함수
+- [x] 손가락이 맞는 지 확인하는 함수
 
 Hand Class 손가락
 
@@ -24,7 +24,6 @@ Hand Class 손가락
 UserControll Class
 
 - [ ] 이름을 입력받아서 User에게 준다.
-- [ ] 손가락이 무엇인지 가져온다.
 
 Progress Class 게임 진행
 
