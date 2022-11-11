@@ -6,6 +6,10 @@ public class User {
         this.name = name;
     }
 
+    public void resetHandOfUser() {
+        hand.setHandRandom();
+    }
+
     @Override
     public String toString() {
         return name;
