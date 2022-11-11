@@ -23,7 +23,9 @@ Hand Class 손가락
 
 UserControll Class
 
-- [ ] 이름을 입력받아서 User에게 준다.
+- [ ] 유저들이 몇명인지 입력
+- [ ] 유저들을 생성하면서 이름을 입력
+- [ ] 유저들의 손가락을 알려준다.
 
 Progress Class 게임 진행
 
