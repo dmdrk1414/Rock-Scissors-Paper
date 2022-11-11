@@ -26,7 +26,7 @@ public class Hand {
     }
 
     private int getRandNum() {
-        return new Random().nextInt(3);
+        return new Random().nextInt(1000) % 3;
     }
 
     public boolean isRightHand(int hand) {
